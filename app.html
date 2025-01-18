@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Əlaqə Forması</title>
+    <style>
+        /* Form tasarımı */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: rgb(70, 70, 240);
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(70, 70, 240);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Əlaqə Forması</h2>
+        <form action="https://formspree.io/f/mrbbvojp" method="POST">
+            <label>
+                Sizin e-poçt ünvanınız:
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Mesajınız:
+                <textarea name="message" rows="4" required></textarea>
+            </label>
+
+            <button type="submit">Göndər</button>
+        </form>
+    </div>
+
+</body>
+</html>
